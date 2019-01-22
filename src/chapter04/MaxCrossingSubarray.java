@@ -13,23 +13,19 @@ public class MaxCrossingSubarray {
         
         int leftSum = Integer.MIN_VALUE;
         int sum = 0;        
-        int maxLeft = 0;
         for (int i = mid; i >= low; i--) {
             sum += A[i];
             if (sum > leftSum) {
                 leftSum = sum;
-                maxLeft = i;
             }
         }
         
         int rightSum = Integer.MIN_VALUE;
         sum = 0;
-        int maxRight = 0;
         for (int i = mid + 1; i < high; i++) {
             sum += A[i];
             if (sum > rightSum) {
                 rightSum = sum;
-                maxRight = i;
             }
         }        
         return leftSum + rightSum;
