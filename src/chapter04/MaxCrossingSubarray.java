@@ -9,8 +9,7 @@ public class MaxCrossingSubarray {
         return findMaxCrossingSubarraySum(A, low, mid, high);
     }
     
-    private static int findMaxCrossingSubarraySum(int[] A, int low, int mid, int high) {
-        
+    private static int findMaxCrossingSubarraySum(int[] A, int low, int mid, int high) { 
         int leftSum = Integer.MIN_VALUE;
         int sum = 0;        
         for (int i = mid; i >= low; i--) {
