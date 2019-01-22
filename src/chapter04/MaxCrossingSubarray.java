@@ -32,12 +32,6 @@ public class MaxCrossingSubarray {
                 maxRight = i;
             }
         }        
-        
-        System.out.print("The maximum subarray is: ");
-        for (int i = 0, j = maxLeft; i < (maxRight - maxLeft + 1); i++, j++) {
-            System.out.print(A[j] + " ");
-        }
-        System.out.println();
         return leftSum + rightSum;
     }    
 }
