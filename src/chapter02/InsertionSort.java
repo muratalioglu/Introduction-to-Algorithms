@@ -4,7 +4,7 @@ public class InsertionSort {
     
     // Main implementation.
     public static void sort(int[] A) {
-        for (int j = 0; j < A.length; j++) {
+        for (int j = 1; j < A.length; j++) {
             int key = A[j];
             int i = j - 1;
             
