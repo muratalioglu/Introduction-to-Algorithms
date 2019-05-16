@@ -16,6 +16,7 @@ public class InsertionSort {
         }
     }
     
+    // exercise 2.1-2
     public static void sortNonDecreasing(int[] A) {
         for (int j = A.length - 2; j >= 0; j--) {
             int key = A[j];
@@ -29,6 +30,7 @@ public class InsertionSort {
         }
     }
     
+    // exercise 2.1-3
     public static int linearSearch(int[] A, int v) {
         for (int i = 0; i < A.length; i++)
             if (A[i] == v)
